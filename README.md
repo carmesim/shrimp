@@ -1,8 +1,8 @@
-#+TITLE: Shrimp (WIP)
+# Shrimp
 
-Simple password generator writen in Rust.
+Simplistic password generator writen in Rust.
 
-# Installation
+## Installation
 
 ```shell
                         # Clone the repository
@@ -11,13 +11,13 @@ cd shrimp               # Change directory into it:
 cargo run --release   # Build it with Cargo
 ```
 
-# Example
+## Example
 
     $ shrimp --length=20
     Password: 7TS@utsKi*4peY5bIX7C
     Quality: Excellent
 
-# Usage
+## Usage
 
     USAGE:
         shrimp [FLAGS] [OPTIONS]
