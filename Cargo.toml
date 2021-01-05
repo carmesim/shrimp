@@ -10,3 +10,8 @@ edition = "2018"
 clap = "2.33.3"
 rand = "0.8.0"
 shannon-entropy = "1.0.0"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3

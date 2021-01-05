@@ -1,0 +1,27 @@
+#+TITLE: Shrimp (WIP)
+
+Simple password generator writen in Rust.
+
+* Installation
+
++ Clone the repository: =git clone https://github.com/carmesim/shrimp=
++ Change directory into it: =cd shrimp=
++ Build it with Cargo: =cargo build --release=
+
+* Usage
+
+If you just run shrimp, it will generate a 15 character long random password.
+It will also rank that password in 4 levels: =Bad, Weak, Good= and =Excelent=, being the last one the best of them.
+
+** Command line options
+
+You can invoke shrimp with several command line options that will affect the resulting password, here they are:
+
++ =-h, --help= Will print the help dialog
++ =-L, --lowercase= Will enable lowercase characters in the password
++ =-n, --numbers= Enables whole numbers like 1, 2 or 8
++ =-S, --silence= Suppress all output but the generated password
++ =-s, --symbols= Enables symbols like #, $ or @
++ =-u, --uppercase= Enables uppercase letters
++ =-V, --version= Prints version information
++ =-v, --verbose= Activates verbose output. Can be set multiple times for greater info
