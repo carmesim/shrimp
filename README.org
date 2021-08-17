@@ -44,6 +44,6 @@ Simplistic password generator writen in Rust.
   -p, --pool <POOL>        Sets the pool of characters from which the password can be made of.
   #+end_example
 
-  If no pool is set or if none of `-Lnsu` are set, a standard charset
+  If no pool is set or if none of =-Lnsu= are set, a standard charset
   of upper and lowercase characters, numbers and special symbols will
   be used.
