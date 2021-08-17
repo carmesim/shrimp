@@ -1,0 +1,49 @@
+#+title: Shrimp
+
+Simplistic password generator writen in Rust.
+
+* Installation
+
+  #+begin_src sh
+    # Clone the repository
+    git clone https://github.com/carmesim/shrimp
+
+    # Change directory into it:
+    cd shrimp
+
+    # Build it with Cargo
+    cargo run --release
+  #+end_src
+
+* Example usage
+
+  #+begin_example
+  $ shrimp --length=20
+  Password: 7TS@utsKi*4peY5bIX7C
+  Quality: Excellent
+  #+end_example
+
+* Available flags
+
+  #+begin_example
+  USAGE:
+  shrimp [FLAGS] [OPTIONS]
+
+  FLAGS:
+  -h, --help         Prints help information
+  -L, --lowercase    Enable lowercase letters.
+  -n, --numbers      Enable whole numbers like 1, 2, or 8.
+  -S, --silence      Suppress all output bar the generated password.
+  -s, --symbols      Enable symbols like #, $ or @.
+  -u, --uppercase    Enable uppercase letters.
+  -V, --version      Prints version information
+  -v, --verbose      Activates verbose output. Can be set multiple times for greater info.
+
+  OPTIONS:
+  -l, --length <LENGTH>    Sets generated password's length. If not set, 15 will be used.
+  -p, --pool <POOL>        Sets the pool of characters from which the password can be made of.
+  #+end_example
+
+  If no pool is set or if none of `-Lnsu` are set, a standard charset
+  of upper and lowercase characters, numbers and special symbols will
+  be used.
